@@ -1,17 +1,17 @@
 {% set name = "pycollada" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/pycollada/pycollada/archive/v{{ version }}.tar.gz"
-  sha256: b0b8e1fd17e3e5a7c1befcb5ec4fa0ead1318c5ca340bb930f62f9809fbce8a1
+  url: https://github.com/pycollada/pycollada/archive/v{{ version }}.tar.gz
+  sha256: e3c29857a65b3dd9c0375c1074195195fc3dada95d6b5c78d246b005f2e85c93
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -29,13 +29,13 @@ test:
     - collada.tests
 
 about:
-  home: "http://pycollada.readthedocs.org/"
+  home: http://pycollada.readthedocs.org/
   license: BSD
   license_family: BSD
   license_file: COPYING
-  summary: "python library for reading and writing collada documents"
-  doc_url: "http://pycollada.readthedocs.org/"
-  dev_url: "https://github.com/pycollada/pycollada"
+  summary: python library for reading and writing collada documents
+  doc_url: http://pycollada.readthedocs.org/
+  dev_url: https://github.com/pycollada/pycollada
 
 extra:
   recipe-maintainers:
