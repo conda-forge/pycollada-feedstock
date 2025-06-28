@@ -1,5 +1,5 @@
 {% set name = "pycollada" %}
-{% set version = "0.9" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pycollada/pycollada/archive/v{{ version }}.tar.gz
-  sha256: bb40e7a69dba1656255fbd70088a9a86e9480410e5f6b6642c301b37789462ce
+  sha256: cbeef93354a47827aa3cdffcb218b1fcb7bd7e81c02c417d475842e36b4dd3bd
 
 build:
   number: 0
