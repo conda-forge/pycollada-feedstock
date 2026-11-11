@@ -10,7 +10,7 @@ source:
   sha256: 4cb3a07fc5feaf27b14e276d3b878799ea1377d7a6a49c1e7d78039399e57ecc
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -32,7 +32,7 @@ test:
 
 about:
   home: http://pycollada.readthedocs.org/
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
   summary: python library for reading and writing collada documents
